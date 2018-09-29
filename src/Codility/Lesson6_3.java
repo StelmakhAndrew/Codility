@@ -11,10 +11,9 @@ public class Lesson6_3 {
         Arrays.sort(A);
         int indx = A.length - 1;
         int result = A[indx] * A[indx - 1] * A[indx - 2];
-        int dresult = A[0] * A[1];
-        if (dresult > A[indx -1] * A[indx -2]) {
-            int result2 = dresult * A[indx];
-            if (result2 > result) return  result2;
+        int dresult = A[0] * A[1] * A[indx];
+        if (dresult >  result) {
+            return  dresult;
         }
         return result;
     }
