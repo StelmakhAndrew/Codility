@@ -11,10 +11,11 @@ public class Lesson6_2 {
         Arrays.sort(A);
         System.out.println(Arrays.toString(A));
         for (int i = 0; i < A.length - 2; i++) {
-            if ((A[i] + A[i + 1] > A[i + 2]) && (A[i + 2] + A[i + 1] > A[i]) && (A[i] + A[i + 2] > A[i + 1])) {
+            if (((long)A[i] + (long)A[i + 1] > A[i + 2]) && ((long)A[i + 2] + (long)A[i + 1] > A[i]) && ((long)A[i] + (long)A[i + 2] > A[i + 1])) {
                 return 1;
             }
         }
+
         return 0;
     }
 }
